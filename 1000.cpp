@@ -1,5 +1,4 @@
-#include<iostream>
-#include<cmath>
+#include<bits/stdc++.h>
 using namespace std;
 string s;
 int num (int begin ,int end);
@@ -16,12 +15,12 @@ int main(void){
 			if(j+i<s.length()){
 				int n = num(j,j+i);
 				if(n>=l&&n<=r) ans++;
-				else if(n>r&&n/r>pow(10,n0)) goto end;
+				else if(n>r&&n/r>pow(10,n0)
 			}
 			else break;
 		}
 	}
-end:
+
 	cout<<ans;
 	
 }
