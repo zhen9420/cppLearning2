@@ -1,9 +1,9 @@
 #include<iostream>
 #include<string>
+char opreated[100000];
 using namespace std;
 int main(void) {
 	string s;
-	char opreated[100000] ={'0'};
 	int n;
 	cin >> n;
 	int x = 0, y = 0;
@@ -26,7 +26,8 @@ int main(void) {
 			}
 			else if (s[i] == 'S') {
 				y--;
-				last = i;
+				opreated[last] = s[i];
+				last++;
 			}
 			else if (s[i] == 'W') {
 				y++;
